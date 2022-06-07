@@ -1,0 +1,62 @@
+@import "../normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@900&display=swap");
+.page {
+  max-width: 1920px;
+  font-family: "Lato", sans-serif;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 0 375px;
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  max-width: 1920px;
+  height: 100px;
+  background: rgba(16, 16, 29, 0.9);
+}
+.header__logo {
+  width: 247px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.header__logo span {
+  color: #43ABF0;
+}
+.header__links-items {
+  margin: 44px 0 39px 0;
+  display: flex;
+  list-style-type: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  align-items: center;
+  text-align: right;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.header__links-item {
+  margin: 0 60px 0 0;
+  transition: opacity 0.2s linear;
+}
+.header__links-item:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.header__links-item:last-of-type {
+  margin: 0;
+}
+.header__links-item:first-of-type {
+  color: #43ABF0;
+}
+
+/*# sourceMappingURL=styles.css.map */

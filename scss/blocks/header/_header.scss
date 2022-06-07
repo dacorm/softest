@@ -1,0 +1,59 @@
+.header {
+  padding: 0 375px;
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  max-width: 1920px;
+  height: 100px;
+  background: rgba(16, 16, 29, 0.9);
+
+  &__logo {
+    width: 247px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: $main-color;
+
+    span {
+      color: #43ABF0;
+    }
+  }
+
+  &__links-items {
+    margin: 44px 0 39px 0;
+    display: flex;
+    list-style-type: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    align-items: center;
+    text-align: right;
+    text-transform: uppercase;
+    color: $main-color;
+  }
+
+  &__links-item {
+    margin: 0 60px 0 0;
+    transition: opacity .2s linear;
+
+    &:hover {
+      opacity: .6;
+      cursor: pointer;
+    }
+
+    &:last-of-type {
+      margin: 0;
+    }
+
+    &:first-of-type {
+      color: $span-color
+    }
+  }
+}
