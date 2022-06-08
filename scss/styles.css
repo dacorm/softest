@@ -117,9 +117,9 @@
 
 .order {
   max-width: 1919px;
-  height: 987px;
-  background-image: url("/images/orderbg.png");
-  background-size: contain;
+  height: 857px;
+  background-image: url("../images/orderbg.png");
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .order__buttons {
@@ -221,10 +221,9 @@
 }
 
 .process {
-  margin-top: -158px;
   max-width: 1920px;
   height: 1000px;
-  background-image: url("/images/processbg.png");
+  background-image: url("../images/processbg.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #10101D;
