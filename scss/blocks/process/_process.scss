@@ -43,17 +43,38 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+
+    &-image {
+      width: 33px;
+      height: 33px;
+      object-fit: contain;
+    }
 
     &-text {
       flex-wrap: nowrap;
-      margin: 20px 0 0 0;
-      max-width: 188px;
+      margin: 20px 51px 0 0;
+      width: 188px;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 19px;
       text-align: center;
       color: $main-color;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    &-wrapper-first {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-wrapper-second {
+      display: flex;
     }
 
     &-wrapper {
@@ -72,14 +93,22 @@
       border-radius: 50%;
       background: #3E9CDC;
       border: 5px solid #286690;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     &-circle {
+      box-sizing: border-box;
       width: 6px;
       height: 6px;
       border-radius: 50%;
       background: #C4C4C4;
-      margin: 0 20px;
+      margin: 0 20px 0 0;
+
+      &_closest {
+        margin-left: 13px;
+      }
     }
   }
 }

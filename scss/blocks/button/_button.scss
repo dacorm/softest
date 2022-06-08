@@ -11,6 +11,12 @@
   background: $span-color;
   border: 1px solid $main-color;
   border-radius: 4px;
+  transition: opacity .3s linear;
+
+  &:hover {
+    opacity: .6;
+    cursor: pointer;
+  }
 
   &_place_order {
     color: #2A2B30;
