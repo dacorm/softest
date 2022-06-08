@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "../normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@900&display=swap");
 .page {
@@ -9,12 +10,20 @@
 .header {
   padding: 0 375px;
   display: flex;
-  position: sticky;
+  position: fixed;
   top: 0;
   justify-content: space-between;
   max-width: 1920px;
+  width: calc(100% - 750px);
   height: 100px;
   background: rgba(16, 16, 29, 0.9);
+}
+.header__link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.header__link_active {
+  color: #43ABF0;
 }
 .header__logo {
   width: 247px;
@@ -42,7 +51,6 @@
   align-items: center;
   text-align: right;
   text-transform: uppercase;
-  color: #FFFFFF;
 }
 .header__links-item {
   margin: 0 60px 0 0;
@@ -55,7 +63,63 @@
 .header__links-item:last-of-type {
   margin: 0;
 }
-.header__links-item:first-of-type {
+
+.order {
+  max-width: 1919px;
+  height: 987px;
+  background-image: url("../../../images/Слой 9 1 (1).png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.order__title {
+  padding: 203px 0 0 375px;
+  margin: 0;
+  width: 780px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: uppercase;
+}
+.order__list {
+  list-style-type: none;
+  padding: 10px 0 0 375px;
+}
+.order__list-title {
+  margin: 0 0 10px 0;
+  padding: 80px 0 0 375px;
+  width: 534px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+.order__list-item {
+  width: fit-content;
+  margin: 0 0 10px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+.order__list-item:last-of-type {
+  margin: 0;
+}
+.order__list-item::before {
+  content: "";
+  width: 4.94px;
+  height: 1.51px;
+  background: #000000;
+  border: 0;
+  margin: 0 11px;
+}
+.order span {
   color: #43ABF0;
 }
 

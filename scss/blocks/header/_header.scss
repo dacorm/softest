@@ -1,12 +1,22 @@
 .header {
   padding: 0 375px;
   display: flex;
-  position: sticky;
+  position: fixed;
   top: 0;
   justify-content: space-between;
   max-width: 1920px;
+  width: calc(100% - (375px + 375px));
   height: 100px;
   background: rgba(16, 16, 29, 0.9);
+
+  &__link {
+    text-decoration: none;
+    color: $main-color;
+
+    &_active {
+      color: $span-color;
+    }
+  }
 
   &__logo {
     width: 247px;
@@ -36,7 +46,6 @@
     align-items: center;
     text-align: right;
     text-transform: uppercase;
-    color: $main-color;
   }
 
   &__links-item {
@@ -50,10 +59,6 @@
 
     &:last-of-type {
       margin: 0;
-    }
-
-    &:first-of-type {
-      color: $span-color
     }
   }
 }
