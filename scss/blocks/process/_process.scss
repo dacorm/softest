@@ -1,0 +1,85 @@
+.process {
+  margin-top: -158px;
+  max-width: 1920px;
+  height: 1000px;
+  background-image: url("/images/processbg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #10101D;
+
+  &__title {
+    padding-top: 150px;
+    margin: 0 auto;
+    max-width: 429px;
+    font-style: normal;
+    font-weight: 700; /* 800 не нашел на google fonts */
+    font-size: 36px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: $main-color;
+
+    &-span {
+      color: $span-color;
+    }
+  }
+
+  &__subtitle {
+    padding-top: 30px;
+    margin: 0 auto;
+    max-width: 555px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #BBBBBB;
+  }
+
+  &__work {
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-text {
+      flex-wrap: nowrap;
+      margin: 20px 0 0 0;
+      max-width: 188px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: $main-color;
+    }
+
+    &-wrapper {
+      padding-top: 39px;
+
+      &:first-of-type {
+        padding-top: 58px;
+      }
+    }
+
+    &-stage {
+      box-sizing: border-box;
+      margin: 0 auto;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #3E9CDC;
+      border: 5px solid #286690;
+    }
+
+    &-circle {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #C4C4C4;
+      margin: 0 20px;
+    }
+  }
+}

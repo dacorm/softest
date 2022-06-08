@@ -1,1 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@900&display=swap');
+.root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}

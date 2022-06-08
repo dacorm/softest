@@ -8,7 +8,7 @@
     <title>SoftNsk Test</title>
     <link rel="stylesheet" href="./scss/styles.css">
 </head>
-<body>
+<body class="root">
 <div class="page">
     <header class="header">
         <div class="header__logo">LoremIpsum.<span>Net</span></div>
@@ -23,14 +23,80 @@
     </header>
     <main class="content">
         <section class="order">
-            <h1 class="order__title"><span>Lorem ipsum</span> dolor sit
-                ametconsectetur <span>adipiscing</span></h1>
-            <p class="order__list-title">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+            <h1 class="order__title">
+                <span class="order__title-span">
+                Lorem ipsum
+            </span>
+                dolor sit
+                ametconsectetur
+                <span class="order__title-span">
+                    adipiscing
+                </span>
+            </h1>
+            <p class="order__list-title">
+                At vero eos et accusamus et iusto odio dignissimos ducimus!
+            </p>
             <ul class="order__list">
                 <li class="order__list-item">Totam rem aperiam eaque ipsa</li>
                 <li class="order__list-item">Sit voluptatem accusantium doloremque laudantium</li>
                 <li class="order__list-item">Sed ut perspiciatis, unde omnis iste natus error</li>
             </ul>
+            <div class="order__buttons">
+                <button class="button" type="button">
+                    <span class="button__text">
+                    заказать
+                </span>
+                </button>
+                <button class="button button_place_order" type="button">
+                    <span class="button__text button__text_place_order">
+                        подробнее
+                    </span>
+                </button>
+            </div>
+        </section>
+        <section class="process">
+            <h2 class="process__title">
+                Оформление <span class="process__title-span">&ensp;Заказа</span>
+            </h2>
+            <p class="process__subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+            <div class="process__work">
+                <div class="process__work-wrapper">
+                <div class="process__work-stage"></div>
+                <p class="process__work-text">
+                    Lorem ipsum dolor
+                    sit amet
+                </p>
+                </div>
+                <div class="process__work-circle"></div>
+                <div class="process__work-wrapper">
+                    <div class="process__work-stage"></div>
+                    <p class="process__work-text">
+                        Сonsecteturadipiscing elit
+                    </p>
+                </div>
+                <div class="process__work-circle"></div>
+                <div class="process__work-wrapper">
+                    <div class="process__work-stage"></div>
+                    <p class="process__work-text">
+                        Sed do eiusmod tempor
+                    </p>
+                </div>
+                <div class="process__work-circle"></div>
+                <div class="process__work-wrapper">
+                    <div class="process__work-stage"></div>
+                    <p class="process__work-text">
+                        Esse cillum dolore
+                        eu fugiat
+                    </p>
+                </div>
+                <div class="process__work-circle"></div>
+                <div class="process__work-wrapper">
+                    <div class="process__work-stage"></div>
+                    <p class="process__work-text">
+                        Excepteur sint occaecat cupidatat non proident
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
 </div>

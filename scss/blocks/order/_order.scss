@@ -1,9 +1,18 @@
+@import "../button/button";
+
 .order {
   max-width: 1919px;
   height: 987px;
   background-image: url("/images/orderbg.png");
   background-size: contain;
   background-repeat: no-repeat;
+
+  &__buttons {
+    display: flex;
+    padding: 80px 0 0 375px;
+    gap: 30px;
+  }
+
 
   &__title {
     padding: 203px 0 0 375px;
@@ -59,7 +68,7 @@
     }
   }
 
-  span {
+  &__title-span {
     color: $span-color;
   }
 }
