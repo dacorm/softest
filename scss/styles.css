@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import "../normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@900&display=swap");
 .page {
@@ -67,7 +66,7 @@
 .order {
   max-width: 1919px;
   height: 987px;
-  background-image: url("../../../images/Слой 9 1 (1).png");
+  background-image: url("../images/orderbg.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
