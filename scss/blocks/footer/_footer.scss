@@ -1,0 +1,99 @@
+@import "../../fonts/fonts";
+
+.footer {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1920px;
+  height: 80px;
+  background: #3D4050;
+  padding: 0 375px;
+
+  &__border {
+    width: 1px;
+    height: 18px;
+    background: #C3C3C3;
+    margin: 0 40px;
+  }
+
+  &__copyright {
+    max-width: 306px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: $main-color;
+  }
+
+  &__payment {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    &-text {
+      max-width: 85px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      color: #C3C3C3;
+    }
+
+    &-item {
+      display: flex;
+      max-width: 150px;
+      margin: 0 40px 0 0;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    align-self: center;
+    margin: 0 12px 0 0;
+  }
+
+  &__link {
+    display: flex;
+    margin: 0 40px 0 0;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &-text {
+      width: fit-content;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+      text-align: left;
+      color: #FFFFFF;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
