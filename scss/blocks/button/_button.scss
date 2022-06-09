@@ -18,6 +18,11 @@
     cursor: pointer;
   }
 
+  &_place_process {
+    max-width: 370px;
+    width: 100%;
+  }
+
   &_place_order {
     color: #2A2B30;
     background: $main-color;

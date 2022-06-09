@@ -6,6 +6,8 @@
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
+  scrollbar-color: $span-color #10101D;
+  scrollbar-width: thin;
 
   &::-webkit-scrollbar {
     width: 7px;
@@ -19,5 +21,7 @@
     background: $span-color;
     border-radius: 3px;
   }
+
+
 }
 

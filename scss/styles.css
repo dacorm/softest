@@ -11,6 +11,8 @@
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
+  scrollbar-color: #43ABF0 #10101D;
+  scrollbar-width: thin;
 }
 .root::-webkit-scrollbar {
   width: 7px;
@@ -37,6 +39,8 @@
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
+  scrollbar-color: #43ABF0 #10101D;
+  scrollbar-width: thin;
 }
 .root::-webkit-scrollbar {
   width: 7px;
@@ -115,6 +119,8 @@
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
+  scrollbar-color: #43ABF0 #10101D;
+  scrollbar-width: thin;
 }
 .root::-webkit-scrollbar {
   width: 7px;
@@ -210,6 +216,10 @@
   opacity: 0.6;
   cursor: pointer;
 }
+.button_place_process {
+  max-width: 370px;
+  width: 100%;
+}
 .button_place_order {
   color: #2A2B30;
   background: #FFFFFF;
@@ -239,6 +249,8 @@
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
+  scrollbar-color: #43ABF0 #10101D;
+  scrollbar-width: thin;
 }
 .root::-webkit-scrollbar {
   width: 7px;
@@ -253,7 +265,7 @@
 
 .process {
   max-width: 1920px;
-  height: 1300px;
+  height: 1000px;
   background-image: url("../images/processbg.png");
   background-size: contain;
   background-repeat: no-repeat;
