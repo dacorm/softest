@@ -259,6 +259,39 @@
   background-repeat: no-repeat;
   background-color: #10101D;
 }
+.process__file-img {
+  width: 17px;
+  height: 20px;
+}
+.process__file-label {
+  align-self: end;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 370px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 2px solid #3E9CDC;
+  border-radius: 3px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #272733;
+  transition: 0.3s linear;
+}
+.process__file-label:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.process__file-input {
+  display: none;
+}
 .process__select {
   display: flex;
   flex-direction: column;
@@ -354,8 +387,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
   gap: 30px;
   padding-top: 80px;
+  max-width: 1172px;
+}
+.process__form-range {
+  max-width: 770px;
+  width: 100%;
+  height: fit-content;
+}
+.process__form-text {
+  max-width: 720px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.process__form-text-wrapper {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
 }
 .process__form-select-option {
   height: 25px;
@@ -405,6 +459,39 @@
   background: rgba(255, 255, 255, 0.85);
   border: 1px solid #FFFFFF;
   border-radius: 3px;
+}
+.process__form-input_type_range {
+  max-width: 770px;
+  width: 100%;
+  -webkit-appearance: none;
+  height: 6px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.process__form-input_type_range::-webkit-slider-thumb {
+  width: 23px;
+  height: 23px;
+  background: #42A9ED;
+  border: 3px solid #286690;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.process__form-input_type_range::-moz-range-thumb {
+  width: 23px;
+  height: 23px;
+  background: #42A9ED;
+  border: 3px solid #286690;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.process__form-input_type_range::-ms-thumb {
+  width: 23px;
+  height: 23px;
+  background: #42A9ED;
+  border: 3px solid #286690;
+  border-radius: 50%;
+  box-sizing: border-box;
 }
 .process__form-input_select {
   -webkit-appearance: none;

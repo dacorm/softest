@@ -121,9 +121,9 @@
             </div>
             <form class="process__form">
                 <div class="process__select">
-                    <h3 class="process__select-title">
+                    <p class="process__select-title">
                         <img src="./images/arrow.svg" alt="Стрелочка вниз" class="process__select-img">
-                    </h3>
+                    </p>
                     <div class="process__select-wrapper">
                     <input id="selectName0" type="radio" value="Sed ut perspiciatis" name="selectName" class="process__select-input"/>
                     <label for="selectName0" class="process__select-label">Sed ut perspiciatis</label>
@@ -141,6 +141,18 @@
                 </div>
                 <input type="email" name="email" id="email" class="process__form-input" placeholder="Ваш e-mail">
                 <input type="text" name="name" id="name" class="process__form-input" placeholder="Ваше имя">
+                <div class="process__form-range">
+                    <div class="process__form-text-wrapper">
+                    <p class="process__form-text">Sed ut perspiciatis, unde omnis iste natus</p>
+                    <p class="process__form-text" id="percents"></p>
+                    </div>
+                <input type="range" name="count" id="count" min="0" max="100" value="75" step="5" class="process__form-input process__form-input_type_range">
+                </div>
+                <input id="file" type="file" value="file" name="file" class="process__file-input"/>
+                <label for="file" class="process__file-label">
+                    <img src="./images/file.png" alt="Прикрепите файл иконка" class="process__file-img">
+                    Прикрепите файл
+                </label>
             </form>
         </section>
     </main>

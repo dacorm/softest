@@ -2,9 +2,12 @@ const arrowImage = document.querySelector('.process__select-img');
 const selectMenu = document.querySelector('.process__select-wrapper');
 const select = document.querySelector('.process__select-title')
 const selectLabels = document.querySelectorAll('.process__select-label');
+const percents = document.querySelector('#percents');
+const inputRange = document.querySelector('#count')
 let selectTitle = 'Выберите тип системы:';
 
 select.prepend(selectTitle);
+percents.textContent = (inputRange.value + '%');
 
 function selectOpen() {
     selectMenu.classList.toggle('process__select-wrapper_active');
@@ -23,3 +26,8 @@ for (let i = 0; i < selectLabels.length; i++) {
         select.textContent = selectTitle;
     })
 }
+
+inputRange.addEventListener('mouseup', (evt) => {
+    percents.textContent = (evt.target.value + '%');
+})
+
