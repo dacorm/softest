@@ -1,10 +1,209 @@
+@import "../../fonts/fonts";
+
 .process {
   max-width: 1920px;
-  height: 1000px;
+  height: 1300px;
   background-image: url("/images/processbg.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #10101D;
+
+  &__select {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &-img {
+      width: 8px;
+      height: 5px;
+      margin-left: 130px;
+      transition: rotate .2s linear;
+
+      &_active {
+        transform: rotate(180deg);
+      }
+    }
+
+    &-wrapper {
+      position: absolute;
+      top: 65px;
+      left: 0;
+      display: none;
+      box-sizing: border-box;
+      background: rgba(39, 39, 51, 0.9);
+      border: 1px solid #3D4050;
+      border-radius: 3px;
+      width: 370px;
+      height: 200px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      z-index: 3;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 34px;
+      align-items: center;
+      color: $main-color;
+
+      &::-webkit-scrollbar {
+        width: 7px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #10101D
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: $span-color;
+        border-radius: 3px;
+      }
+
+      &_active {
+        display: block;
+      }
+    }
+
+    &-title {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px;
+      gap: 5px;
+      cursor: pointer;
+      width: 370px;
+      height: 48px;
+      outline: none;
+      background: rgba(255, 255, 255, 0.85);
+      border: 1px solid #FFFFFF;
+      border-radius: 3px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #272733;
+
+      &_active {
+        background: rgba(39, 39, 51, 0.9);
+        color: $main-color;
+        border: 0;
+      }
+    }
+
+    &-label {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px;
+      gap: 5px;
+      width: 370px;
+
+      &:hover {
+        color: $span-color;
+      }
+    }
+
+    &-input {
+      display: none;
+
+      &:checked + label {
+        color: $span-color
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 80px;
+
+    &-select-option {
+        height: 25px;
+        overflow-y: scroll;
+        scrollbar-track-color: #3D4050;
+        scrollbar-face-color: $span-color;
+
+      &::-webkit-scrollbar {
+        width: 7px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #10101D
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: $span-color;
+        border-radius: 3px;
+      }
+
+      &:hover {
+        box-shadow: 0 0 10px 100px $span-color inset;
+      }
+    }
+
+    &-select {
+      position: relative;
+
+      &::after {
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-top: 1px solid #000000;
+        border-right: 1px solid #000000;
+        transform: rotate(135deg);
+        pointer-events: none;
+        position: absolute;
+        top: 40%;
+        right: 20px;
+      }
+    }
+
+    &-input {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px;
+      gap: 5px;
+      cursor: pointer;
+      width: 370px;
+      height: 48px;
+      outline: none;
+      background: rgba(255, 255, 255, 0.85);
+      border: 1px solid #FFFFFF;
+      border-radius: 3px;
+
+      &_select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+
+        &::-ms-expand {
+          display: none;
+        }
+      }
+
+      &::placeholder {
+        max-width: 324px;
+        height: 24px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        color: #272733;
+
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+  }
 
   &__title {
     padding-top: 150px;

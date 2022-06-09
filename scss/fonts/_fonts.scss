@@ -6,4 +6,18 @@
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
+
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #10101D
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $span-color;
+    border-radius: 3px;
+  }
 }
+
