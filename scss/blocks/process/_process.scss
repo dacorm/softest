@@ -51,14 +51,27 @@
     flex-direction: column;
     position: relative;
 
+    @media screen and (max-width: 1000px) {
+      margin-right: 0;
+    }
+
+    @media screen and (max-width: 500px) {
+      max-width: 355px;
+      margin-right: 15px;
+    }
+
+    @media screen and (max-width: 422px) {
+      margin-right: 0;
+    }
+
     &-img {
       width: 8px;
       height: 5px;
       margin-left: 130px;
       transition: rotate .2s linear;
 
-      @media screen and (max-width: 374px) {
-        margin-left: 100px;
+      @media screen and (max-width: 500px) {
+        margin-left: 120px;
       }
 
       &_active {
@@ -129,6 +142,10 @@
       line-height: 22px;
       color: #272733;
 
+      @media screen and (max-width: 424px) {
+        width: 355px;
+      }
+
       @media screen and (max-width: 374px) {
         width: fit-content;
       }
@@ -173,6 +190,10 @@
     padding-top: 80px;
     max-width: 1172px;
 
+    @media screen and (max-width: 500px) {
+      width: calc(100% - 20px);
+    }
+
     &-range {
       max-width: 770px;
       width: 100%;
@@ -194,6 +215,10 @@
       font-size: 18px;
       line-height: 22px;
       color: $main-color;
+
+      @media screen and (max-width: 424px) {
+        max-width: 315px;
+      }
 
       &-wrapper {
         display: flex;
@@ -259,7 +284,7 @@
       border-radius: 3px;
 
       @media screen and (max-width: 374px) {
-        width: calc(100% - 20px);
+        width: 100%;
       }
 
       &_type_range {

@@ -66,8 +66,8 @@
       font-size: 20px;
     }
 
-    span {
-      color: #43ABF0;
+    &_active {
+      color: $span-color;
     }
   }
 
