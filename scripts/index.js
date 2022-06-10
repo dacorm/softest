@@ -51,6 +51,10 @@ inputRange.addEventListener('mouseup', (evt) => {
     percents.textContent = (evt.target.value + '%');
 })
 
+inputRange.addEventListener('touchend', (evt) => {
+    percents.textContent = (evt.target.value + '%');
+})
+
 for (const burgerLink of burgerLinks) {
     burgerLink.addEventListener('click', popupOpen);
     burgerLink.addEventListener('click', burgerButton);
