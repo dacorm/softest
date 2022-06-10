@@ -7,10 +7,44 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  @media screen and (max-width: 1500px) {
+    background-position: right;
+  }
+
+  @media screen and (max-width: 500px) {
+    background-position: right center;
+  }
+
   &__buttons {
     display: flex;
     padding: 80px 0 0 375px;
     gap: 30px;
+
+    @media screen and (max-width: 1500px) {
+      padding-left: 150px;
+    }
+
+    @media screen and (max-width: 1050px) {
+      padding-left: 100px;
+    }
+
+    @media screen and (max-width: 929px) {
+      padding-left: 50px;
+    }
+
+    @media screen and (max-width: 625px) {
+      padding-top: 50px;
+    }
+
+    @media screen and (max-width: 500px) {
+      padding-left: 0;
+      margin-left: 12px;
+    }
+
+    @media screen and (max-width: 420px) {
+      padding-left: 0;
+      margin: 0 10px 0 10px;
+    }
   }
 
 
@@ -23,11 +57,57 @@
     font-size: 48px;
     line-height: 58px;
     text-transform: uppercase;
+
+    @media screen and (max-width: 1500px) {
+      padding-left: 150px;
+      font-size: 40px;
+    }
+
+    @media screen and (max-width: 1050px) {
+      padding-left: 100px;
+    }
+
+    @media screen and (max-width: 929px) {
+      padding-left: 50px;
+      width: 500px;
+    }
+
+    @media screen and (max-width: 625px) {
+      max-width: 400px;
+    }
+
+    @media screen and (max-width: 500px) {
+      width: calc(100% - 24px);
+      padding-left: 0;
+      margin: 0 auto;
+      font-size: 35px;
+    }
+
+    @media screen and (max-width: 374px) {
+      font-size: 30px;
+    }
   }
 
   &__list {
     list-style-type: none;
     padding: 10px 0 0 375px;
+
+    @media screen and (max-width: 1500px) {
+      padding-left: 150px;
+    }
+
+    @media screen and (max-width: 1050px) {
+      padding-left: 100px;
+    }
+
+    @media screen and (max-width: 929px) {
+      padding-left: 50px;
+    }
+
+    @media screen and (max-width: 500px) {
+      padding-left: 0;
+      margin: 0 auto;
+    }
   }
 
   &__list-title {
@@ -41,6 +121,33 @@
     display: flex;
     align-items: center;
     color: #000000;
+
+    @media screen and (max-width: 1500px) {
+      padding-left: 150px;
+    }
+
+    @media screen and (max-width: 1050px) {
+      padding-left: 100px;
+    }
+
+    @media screen and (max-width: 929px) {
+      padding-left: 50px;
+      padding-top: 55px;
+    }
+
+    @media screen and (max-width: 625px) {
+      max-width: 350px;
+    }
+
+    @media screen and (max-width: 500px) {
+      padding-left: 0;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 374px) {
+      max-width: 296px;
+      font-size: 15px;
+    }
   }
 
   &__list-item {
@@ -53,6 +160,10 @@
     display: flex;
     align-items: center;
     color: #000000;
+
+    @media screen and (max-width: 625px) {
+      font-size: 14px;
+    }
 
     &:last-of-type {
       margin: 0;

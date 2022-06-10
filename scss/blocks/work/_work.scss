@@ -1,0 +1,129 @@
+.work {
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 929px) {
+    flex-direction: column;
+  }
+
+  &__wrapper {
+    &:last-of-type {
+      padding-top: 15px;
+
+      @media screen and (max-width: 929px) {
+        padding-top: 0;
+      }
+    }
+    @media screen and (max-width: 1050px) {
+      margin-left: -20px;
+    }
+  }
+
+  &__stage {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #3E9CDC;
+    border: 5px solid #286690;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 1050px) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &__text {
+    flex-wrap: nowrap;
+    margin: 20px 0 0 0;
+    width: 190px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: $main-color;
+
+    @media screen and (max-width: 1050px) {
+      width: 130px;
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 929px) {
+      margin-top: 10px;
+    }
+  }
+
+  &__image {
+    width: 33px;
+    height: 33px;
+    object-fit: contain;
+  }
+
+  &__circle-first {
+    box-sizing: border-box;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    margin: 0 20px 37px -35px;
+
+    @media screen and (max-width: 1050px) {
+      width: 0;
+      height: 0;
+      margin: 0;
+    }
+  }
+
+  &__circle-second {
+    box-sizing: border-box;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    margin: 0 20px 37px -2px;
+
+    @media screen and (max-width: 1050px) {
+      width: 0;
+      height: 0;
+      margin: 0;
+    }
+  }
+
+  &__circle-fifth {
+    box-sizing: border-box;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    margin: 0 -30px 37px 0;
+    @media screen and (max-width: 1050px) {
+      width: 0;
+      height: 0;
+      margin: 0;
+    }
+  }
+
+  &__circle {
+    box-sizing: border-box;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    margin: 0 20px 37px 0;
+
+    @media screen and (max-width: 1050px) {
+      margin: 0 20px 55px 0;
+    }
+
+    @media screen and (max-width: 929px) {
+      margin: 20px 20px 20px 0;
+    }
+  }
+}

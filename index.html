@@ -10,9 +10,22 @@
 </head>
 <body class="root">
 <div class="page">
+    <div class="burger__popup">
+        <ul class="burger__links">
+            <li class="burger__links-item"><a href="#" class="burger__link burger__link_active">Бизнес</a></li>
+            <li class="burger__links-item"><a href="#" class="burger__link">О нас</a></li>
+            <li class="burger__links-item"><a href="#" class="burger__link">Цены</a></li>
+            <li class="burger__links-item"><a href="#" class="burger__link">Оформить заказ</a></li>
+        </ul>
+    </div>
     <header class="header">
         <div class="header__logo">LoremIpsum.<span>Net</span></div>
         <nav class="header__links">
+            <div class="burger">
+                <span class="burger__bar" id="firstbar"></span>
+                <span class="burger__bar" id="secondbar"></span>
+                <span class="burger__bar" id="thirdbar"></span>
+            </div>
             <ul class="header__links-items">
                 <li class="header__links-item"><a href="#" class="header__link header__link_active">Бизнес</a></li>
                 <li class="header__links-item"><a href="#" class="header__link">О нас</a></li>
@@ -56,67 +69,72 @@
         </section>
         <section class="process">
             <h2 class="process__title">
-                Оформление <span class="process__title-span">&ensp;Заказа</span>
+                Оформление <span class="process__title-span">Заказа</span>
             </h2>
             <p class="process__subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
-            <div class="process__work">
-                <div class="process__work-wrapper-first">
-                    <div class="process__work-stage">
-                        <img src="./images/search.png" alt="Иконка поиск" class="process__work-image">
+            <div class="work"> <!-- Решил сделать переиспользуемым блоком -->
+                <div class="work__wrapper">
+                    <div class="work__stage">
+                        <img src="./images/search.png" alt="Иконка поиск" class="work__image">
                     </div>
-                    <div class="process__work-circle process__work-circle_closest"></div>
-                    <div class="process__work-circle"></div>
-                    <div class="process__work-circle"></div>
-                    <div class="process__work-circle"></div>
-                    <div class="process__work-circle"></div>
-                    <div class="process__work-stage">
-                        <img src="./images/percents.png" alt="Знак процента" class="process__work-image">
-                    </div>
-                    <div class="process__work-circle process__work-circle_closest"></div>
-                    <div class="process__work-circle"></div>
-                    <div class="process__work-circle"></div>
-                    <div class="process__work-circle"></div>
-                    <div class="process__work-circle"></div>
-                    <div class="process__work-stage">
-                        <img src="./images/Subtract%20(1).png" alt="Значок заключения контракта"
-                             class="process__work-image">
-                    </div>
-                    <div class="process__work-circle process__work-circle_closest"></div>
-                    <div class="process__work-circle"></div>
-                    <div class="process__work-circle"></div>
-                    <div class="process__work-circle"></div>
-                    <div class="process__work-circle"></div>
-                    <div class="process__work-stage">
-                        <img src="./images/mail.png" alt="Значок письма" class="process__work-image">
-                    </div>
-                    <div class="process__work-circle process__work-circle_closest"></div>
-                    <div class="process__work-circle"></div>
-                    <div class="process__work-circle"></div>
-                    <div class="process__work-circle"></div>
-                    <div class="process__work-circle"></div>
-                    <div class="process__work-stage">
-                        <img src="./images/money.png" alt="Значок денежной прибыли" class="process__work-image">
-                    </div>
-                </div>
-                <div class="process__work-wrapper-second">
-                    <p class="process__work-text">
+                    <p class="work__text">
                         Lorem ipsum dolor
                         sit amet
                     </p>
-                    <p class="process__work-text">
+                </div>
+                <div class="work__circle-first"></div>
+                <div class="work__circle-second"></div>
+                <div class="work__circle workc__circle_closest"></div>
+                <div class="work__circle"></div>
+                <div class="work__circle-fifth"></div>
+                <div class="work__wrapper">
+                    <div class="work__stage">
+                        <img src="./images/percents.png" alt="Знак процента" class="work__image">
+                    </div>
+                    <p class="work__text">
                         Сonsecteturadipiscing elit
                     </p>
-                    <p class="process__work-text">
+                </div>
+                <div class="work__circle-first"></div>
+                <div class="work__circle-second"></div>
+                <div class="work__circle"></div>
+                <div class="work__circle"></div>
+                <div class="work__circle-fifth"></div>
+                <div class="work__wrapper">
+                    <div class="work__stage">
+                        <img src="./images/Subtract%20(1).png" alt="Значок заключения контракта"
+                             class="work__image">
+                    </div>
+                    <p class="work__text">
                         Sed do eiusmod tempor
                     </p>
-                    <p class="process__work-text">
+                </div>
+                <div class="work__circle-first"></div>
+                <div class="work__circle-second"></div>
+                <div class="work__circle"></div>
+                <div class="work__circle"></div>
+                <div class="work__circle-fifth"></div>
+                <div class="work__wrapper">
+                    <div class="work__stage">
+                        <img src="./images/mail.png" alt="Значок письма" class="work__image">
+                    </div>
+                    <p class="work__text">
                         Esse cillum dolore
                         eu fugiat
                     </p>
-                    <p class="process__work-text">
+                </div>
+                <div class="work__circle-first"></div>
+                <div class="work__circle-second"></div>
+                <div class="work__circle"></div>
+                <div class="work__circle"></div>
+                <div class="work__circle-fifth"></div>
+                <div class="work__wrapper">
+                    <div class="work__stage">
+                        <img src="./images/money.png" alt="Значок денежной прибыли" class="process__work-image">
+                    </div>
+                    <p class="work__text">
                         Excepteur sint occaecat cupidatat non proident
                     </p>
-
                 </div>
             </div>
             <form class="process__form">
@@ -187,12 +205,16 @@
             <div class="footer__border"></div>
             <ul class="footer__links">
                 <li class="footer__link">
+                    <a href="#" class="footer__link-text">
                     <img src="./images/email.png" alt="Значок письма" class="footer__icon">
                     <p class="footer__link-text">info@ipsum228.com</p>
+                    </a>
                 </li>
                 <li class="footer__link">
-                    <img src="./images/В.png" alt="Иконка Вконтакте" class="footer__icon">
+                    <a href="#" class="footer__link-text">
+                        <img src="./images/В.png" alt="Иконка Вконтакте" class="footer__icon">
                     <p class="footer__link-text">Мы вконтакте</p>
+                    </a>
                 </li>
             </ul>
         </footer>

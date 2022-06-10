@@ -6,15 +6,40 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 80px;
+  min-height: 80px;
   background: #3D4050;
   padding: 0 373px;
+  overflow: hidden;
+
+  @media screen and (max-width: 1500px) {
+    padding: 0 130px;
+  }
+
+  @media screen and (max-width: 1050px) {
+    padding: 0 85px;
+  }
+
+  @media screen and (max-width: 929px) {
+    padding: 0 50px;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 0 10px;
+  }
+
+  @media screen and (max-width: 420px) {
+    padding: 0 5px;
+  }
 
   &__border {
     width: 1px;
     height: 18px;
     background: #C3C3C3;
     margin: 0 40px;
+
+    @media screen and (max-width: 929px) {
+      display: none;
+    }
   }
 
   &__copyright {
@@ -28,6 +53,14 @@
     flex-wrap: nowrap;
     align-items: center;
     color: $main-color;
+
+    @media screen and (max-width: 1050px) {
+      font-size: 12px;
+    }
+
+    @media screen and (max-width: 929px) {
+      margin-right: 10px;
+    }
   }
 
   &__payment {
@@ -36,6 +69,14 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+
+    @media screen and (max-width: 929px) {
+      margin-right: 10px;
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
 
     &-text {
       max-width: 85px;
@@ -54,6 +95,10 @@
       max-width: 150px;
       margin: 0 40px 0 0;
 
+      @media screen and (max-width: 929px) {
+        margin-right: 20px;
+      }
+
       &:last-of-type {
         margin-right: 0;
       }
@@ -71,6 +116,15 @@
     display: flex;
     margin: 0 40px 0 0;
 
+    @media screen and (max-width: 929px) {
+      margin-right: 20px;
+    }
+
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
     &:last-of-type {
       margin-right: 0;
     }
@@ -85,6 +139,24 @@
       align-items: center;
       text-align: left;
       color: #FFFFFF;
+      text-decoration: none;
+      transition: .3s linear;
+
+      @media screen and (max-width: 500px) {
+        width: 80px;
+        font-size: 11px;
+        flex-wrap: wrap;
+      }
+
+      @media screen and (max-width: 374px) {
+        font-size: 9px;
+      }
+
+
+      &:hover {
+        opacity: .6;
+        cursor: pointer;
+      }
     }
   }
 
@@ -95,5 +167,10 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 }

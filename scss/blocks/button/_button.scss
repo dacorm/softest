@@ -13,6 +13,14 @@
   border-radius: 4px;
   transition: opacity .3s linear;
 
+  @media screen and (max-width: 420px) {
+    width: 150px;
+  }
+
+  @media screen and (max-width: 374px) {
+    width: 120px;
+  }
+
   &:hover {
     opacity: .6;
     cursor: pointer;
