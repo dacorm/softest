@@ -743,7 +743,7 @@
 }
 @media screen and (max-width: 374px) {
   .process__select-title {
-    width: fit-content;
+    width: 300px;
   }
 }
 .process__select-title_active {
