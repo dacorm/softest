@@ -337,7 +337,8 @@
 }
 @media screen and (max-width: 500px) {
   .order {
-    background-position: right center;
+    background-image: url("../images/ordermobile.png");
+    background-position: left;
   }
 }
 .order__buttons {
